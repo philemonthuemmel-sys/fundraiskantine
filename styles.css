@@ -144,9 +144,9 @@ h2 {
 
 .hero {
   background:
-    radial-gradient(circle at 18% 12%, rgba(38, 18, 79, 0.38) 0%, rgba(38, 18, 79, 0) 42%),
-    radial-gradient(circle at 60% 50%, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0) 55%),
-    linear-gradient(135deg, #c9b6ef 0%, #eae4fa 48%, #bda7e8 100%);
+    radial-gradient(circle at 50% 42%, rgba(38, 18, 79, 0.50) 0%, rgba(38, 18, 79, 0.22) 38%, rgba(38, 18, 79, 0) 68%),
+    radial-gradient(circle at 15% 10%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 45%),
+    linear-gradient(135deg, #ece7fb 0%, #ddd2f6 50%, #e8e2f9 100%);
   color: var(--primary-dark);
   padding: 6rem 0 7rem;
   text-align: center;
