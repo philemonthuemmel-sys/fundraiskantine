@@ -143,8 +143,8 @@ h2 {
 }
 
 .hero {
-  background: linear-gradient(135deg, #1e0e45 0%, #392078 55%, #5b3fa8 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #ece6fa 0%, #d9cdf5 55%, #c6b5ef 100%);
+  color: var(--primary-dark);
   padding: 6rem 0 7rem;
   text-align: center;
 }
@@ -164,7 +164,7 @@ h2 {
   letter-spacing: 0.12em;
   font-weight: 700;
   font-size: 0.8rem;
-  color: var(--accent);
+  color: var(--primary);
   margin-bottom: 1rem;
 }
 
@@ -177,7 +177,7 @@ h2 {
   max-width: 640px;
   margin: 0 auto 2rem;
   font-size: 1.15rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(37, 28, 51, 0.75);
 }
 
 .hero-actions {
@@ -197,13 +197,13 @@ h2 {
 }
 
 .hero .btn-ghost {
-  color: #fff;
-  border-color: #fff;
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 .hero .btn-ghost:hover {
-  background: #fff;
-  color: var(--primary-dark);
+  background: var(--primary-dark);
+  color: #fff;
 }
 
 .progress-card {
