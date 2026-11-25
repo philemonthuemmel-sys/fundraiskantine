@@ -2,8 +2,8 @@
   --primary: #392078;
   --primary-dark: #26124f;
   --accent: #f2a72e;
-  --bg: #f4f0fb;
-  --alt: #e9e3f8;
+  --bg: #ddd2f6;
+  --alt: #ddd2f6;
   --text: #251c33;
   --muted: #6e6680;
   --card: #ffffff;
@@ -63,7 +63,7 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(244, 240, 251, 0.92);
+  background: rgba(221, 210, 246, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(35, 40, 31, 0.08);
   transition: box-shadow 0.2s ease;
@@ -143,10 +143,7 @@ h2 {
 }
 
 .hero {
-  background:
-    radial-gradient(circle at 50% 42%, rgba(38, 18, 79, 0.50) 0%, rgba(38, 18, 79, 0.22) 38%, rgba(38, 18, 79, 0) 68%),
-    radial-gradient(circle at 15% 10%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 45%),
-    linear-gradient(135deg, #ece7fb 0%, #ddd2f6 50%, #e8e2f9 100%);
+  background: #ddd2f6;
   color: var(--primary-dark);
   padding: 6rem 0 7rem;
   text-align: center;
