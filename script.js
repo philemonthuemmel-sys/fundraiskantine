@@ -91,3 +91,40 @@ document.querySelectorAll(".accordion-question").forEach((btn) => {
     btn.setAttribute("aria-expanded", String(open));
   });
 });
+
+const amountButtons = document.querySelectorAll(".amount-btn");
+const freeWrap = document.getElementById("freeAmountWrap");
+const freeInput = document.getElementById("freeAmount");
+const paypalCta = document.getElementById("paypalCta");
+const paypalBase = "https://www.paypal.com/paypalme/fundraiskantine";
+
+function updatePaypalCta() {
+  if (!paypalCta) return;
+  const active = document.querySelector(".amount-btn.active");
+  let amount = null;
+  if (active && active.dataset.amount !== "free") {
+    amount = active.dataset.amount;
+  } else if (active && active.dataset.amount === "free" && freeInput) {
+    const v = freeInput.value.trim();
+    if (v) amount = v;
+  }
+  paypalCta.href = amount ? paypalBase + "/" + encodeURIComponent(amount) : paypalBase;
+  paypalCta.textContent = amount
+    ? "Jetzt " + amount + " € über PayPal spenden"
+    : "Jetzt über PayPal spenden";
+}
+
+amountButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    amountButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    if (freeWrap) freeWrap.hidden = btn.dataset.amount !== "free";
+    updatePaypalCta();
+  });
+});
+
+if (freeInput) freeInput.addEventListener("input", updatePaypalCta);
+
+const defaultAmountBtn = document.querySelector('.amount-btn[data-amount="25"]');
+if (defaultAmountBtn) defaultAmountBtn.classList.add("active");
+updatePaypalCta();
