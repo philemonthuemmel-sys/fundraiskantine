@@ -1,14 +1,14 @@
 :root {
-  --primary: #1e7a4c;
-  --primary-dark: #145c38;
+  --primary: #392078;
+  --primary-dark: #26124f;
   --accent: #f2a72e;
-  --bg: #fcfbf8;
-  --alt: #f2f0e9;
-  --text: #23281f;
-  --muted: #616b58;
+  --bg: #fdfcfe;
+  --alt: #f2eff9;
+  --text: #251c33;
+  --muted: #6e6680;
   --card: #ffffff;
   --radius: 14px;
-  --shadow: 0 8px 30px rgba(35, 40, 31, 0.08);
+  --shadow: 0 8px 30px rgba(37, 28, 51, 0.08);
   --header-h: 68px;
 }
 
@@ -63,7 +63,7 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(252, 251, 248, 0.92);
+  background: rgba(253, 252, 254, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(35, 40, 31, 0.08);
   transition: box-shadow 0.2s ease;
@@ -85,6 +85,12 @@ h2 {
   font-size: 1.15rem;
   color: var(--primary-dark);
   text-decoration: none;
+}
+
+.brand-logo {
+  height: 46px;
+  width: auto;
+  display: block;
 }
 
 .main-nav {
@@ -143,7 +149,7 @@ h2 {
 }
 
 .hero {
-  background: linear-gradient(135deg, #145c38 0%, #1e7a4c 55%, #2c9463 100%);
+  background: linear-gradient(135deg, #1e0e45 0%, #392078 55%, #5b3fa8 100%);
   color: #fff;
   padding: 6rem 0 7rem;
   text-align: center;
@@ -239,7 +245,7 @@ h2 {
 .progress-bar {
   height: 100%;
   width: 0;
-  background: linear-gradient(90deg, var(--primary), #2c9463);
+  background: linear-gradient(90deg, var(--primary), #6b4fd8);
   border-radius: 999px;
   transition: width 1.4s cubic-bezier(0.22, 0.8, 0.3, 1);
 }
@@ -522,6 +528,10 @@ code {
     width: 24px;
     height: 2px;
     background: var(--text);
+  }
+
+  .brand-logo {
+    height: 38px;
   }
 
   .main-nav {

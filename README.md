@@ -5,8 +5,10 @@ Statische One-Pager-Website für die Spendenkampagne „Fundraiskantine" – rei
 ## Struktur
 
 - `index.html` – die komplette Kampagnenseite (Deutsch)
-- `styles.css` – Gestaltung
+- `styles.css` – Gestaltung (Farben abgestimmt auf das Logo)
 - `script.js` – Fortschrittsbalken, Countdown, FAQ-Akkordeon, Kopier-Buttons, mobile Navigation
+- `logo.png` – Kampagnen-Logo (transparent, im Header eingebunden)
+- `favicon.png` – Browser-Icon
 - `README.md` – diese Datei
 
 ## Kampagnenzahlen anpassen
