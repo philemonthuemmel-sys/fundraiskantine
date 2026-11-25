@@ -2,8 +2,8 @@
   --primary: #392078;
   --primary-dark: #26124f;
   --accent: #f2a72e;
-  --bg: #fdfcfe;
-  --alt: #f2eff9;
+  --bg: #f4f0fb;
+  --alt: #e9e3f8;
   --text: #251c33;
   --muted: #6e6680;
   --card: #ffffff;
@@ -63,7 +63,7 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(253, 252, 254, 0.92);
+  background: rgba(244, 240, 251, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(35, 40, 31, 0.08);
   transition: box-shadow 0.2s ease;
@@ -150,9 +150,9 @@ h2 {
 }
 
 .hero-logo {
-  height: 8.35cm;
+  height: 7.85cm;
   width: auto;
-  background: #ddd3f6;
+  background: #fff;
   border-radius: 0.85cm;
   padding: 0.5cm 0.9cm;
   margin-bottom: 2rem;
@@ -535,7 +535,7 @@ code {
   }
 
   .hero-logo {
-    height: 6.6cm;
+    height: 6.1cm;
   }
 
   .main-nav {
