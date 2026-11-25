@@ -35,9 +35,6 @@ if (progressSection) {
   const goal = Number(progressSection.dataset.goal) || 0;
   const current = Number(progressSection.dataset.current) || 0;
   const donors = Number(progressSection.dataset.donors) || 0;
-  const deadline = progressSection.dataset.deadline
-    ? new Date(progressSection.dataset.deadline + "T23:59:59")
-    : null;
   const percent = goal > 0 ? Math.min(100, Math.round((current / goal) * 100)) : 0;
 
   document.getElementById("progressCurrent").textContent = formatEuro(current);
@@ -45,12 +42,6 @@ if (progressSection) {
   document.getElementById("progressPercent").textContent = percent + " %";
   document.getElementById("donorCount").textContent = donors.toLocaleString("de-DE");
   document.getElementById("amountLeft").textContent = formatEuro(Math.max(0, goal - current));
-
-  const daysLeftEl = document.getElementById("daysLeft");
-  if (deadline) {
-    const diff = Math.ceil((deadline - new Date()) / 86400000);
-    daysLeftEl.textContent = diff > 0 ? String(diff) : "0";
-  }
 
   const bar = document.getElementById("progressBar");
   const wrap = document.getElementById("progressBarWrap");

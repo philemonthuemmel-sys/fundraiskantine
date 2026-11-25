@@ -17,8 +17,7 @@ Die Zahlen stehen als `data`-Attribute am Abschnitt `#fortschritt` in `index.htm
 
 - `data-goal` – Spendenziel in Euro
 - `data-current` – bisher gesammelter Betrag in Euro
-- `data-donors` – Anzahl der Spenderinnen und Spender
-- `data-deadline` – Frist im Format `JJJJ-MM-TT`
+- `data-donors` – Anzahl der Unterstützenden
 
 Bankverbindung und Kontaktdaten stehen direkt in den Abschnitten `#spenden` und `#kontakt`.
 
