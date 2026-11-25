@@ -150,11 +150,11 @@ h2 {
 }
 
 .hero-logo {
-  height: 240px;
+  height: 8.35cm;
   width: auto;
-  background: #fff;
-  border-radius: 32px;
-  padding: 20px 36px;
+  background: #ddd3f6;
+  border-radius: 0.85cm;
+  padding: 0.5cm 0.9cm;
   margin-bottom: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
@@ -535,7 +535,7 @@ code {
   }
 
   .hero-logo {
-    height: 176px;
+    height: 6.6cm;
   }
 
   .main-nav {
