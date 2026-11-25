@@ -273,6 +273,15 @@ h2 {
   font-size: 0.9rem;
 }
 
+.about-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
 .two-col {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
