@@ -448,12 +448,39 @@ code {
   color: var(--primary-dark);
 }
 
-.merch-list {
-  margin: 0 0 1rem 1.2rem;
+.section-intro {
+  color: var(--muted);
+  max-width: 640px;
+  margin-bottom: 1.5rem;
 }
 
-.merch-list li {
-  margin-bottom: 0.3rem;
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.4rem;
+}
+
+.merch-item {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem;
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.merch-item img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+.merch-item span {
+  color: var(--primary-dark);
+  font-weight: 800;
+  font-size: 1.1rem;
 }
 
 .accordion-item {

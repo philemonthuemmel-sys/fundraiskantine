@@ -21,6 +21,7 @@
       <a href="#fortschritt">Fortschritt</a>
       <a href="#verwendung">Verwendung</a>
       <a href="#faq">FAQ</a>
+      <a href="#merch">Merch</a>
       <a href="#kontakt">Kontakt</a>
       <a class="btn btn-small" href="#spenden">Jetzt spenden</a>
     </nav>
@@ -113,7 +114,7 @@
       <div class="donate-grid">
         <div class="donate-card">
           <h3>Spende – Betrag wählen</h3>
-          <div class="amount-row">
+          <div class="amount-row" id="amountRow">
             <button class="amount-btn" type="button" data-amount="5">5&nbsp;€</button>
             <button class="amount-btn" type="button" data-amount="10">10&nbsp;€</button>
             <button class="amount-btn" type="button" data-amount="25">25&nbsp;€</button>
@@ -140,21 +141,46 @@
         <div class="donate-card">
           <h3>Soli-Essenmarke – 17&nbsp;€</h3>
           <p>Eine Marke kostet <strong>17&nbsp;€</strong>. Dafür bekommst du später <strong>ein Essen bei uns</strong> – einlösbar ab der Eröffnung im Sommer 2027. Der Solidaritätsbeitrag fließt direkt in die Einrichtung der Kantine.</p>
-          <p><a class="btn" href="https://www.paypal.com/paypalme/fundraiskantine/17" target="_blank" rel="noopener">Soli-Essenmarke für 17&nbsp;€ kaufen</a></p>
+          <div class="amount-row" id="soliAmountRow">
+            <button class="amount-btn" type="button" data-amount="1">1×</button>
+            <button class="amount-btn" type="button" data-amount="2">2×</button>
+            <button class="amount-btn" type="button" data-amount="3">3×</button>
+            <button class="amount-btn" type="button" data-amount="5">5×</button>
+            <button class="amount-btn" type="button" data-amount="10">10×</button>
+          </div>
+          <p><a class="btn" id="soliCta" href="https://www.paypal.com/paypalme/fundraiskantine/17" target="_blank" rel="noopener">1× Soli-Essenmarke – 17&nbsp;€ über PayPal</a></p>
         </div>
         <div class="donate-card">
           <h3>Direktkredit</h3>
           <p>Du kannst uns auch direkt Geld leihen – zum Beispiel zinslos. Wie das genau funktioniert (Laufzeit, Rückzahlung, Vertrag), erklären wir ausführlich in unserem Blog. <strong>Blog folgt in Kürze.</strong></p>
           <p>Interesse? Schreib uns: <a href="mailto:kontakt@fundraiskantine.de">kontakt@fundraiskantine.de</a></p>
         </div>
-        <div class="donate-card">
-          <h3>Merch – Siebdruck von momochrome (Leipzig)</h3>
-          <ul class="merch-list">
-            <li>Geschirrtücher</li>
-            <li>Kochschürzen</li>
-            <li>Caps</li>
-          </ul>
-          <p>Jede Bestellung unterstützt die Kantine. Preise und Bestellweg folgen in Kürze – schreib uns: <a href="mailto:kontakt@fundraiskantine.de">kontakt@fundraiskantine.de</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="merch">
+    <div class="container">
+      <h2>Merch – Siebdruck von momochrome (Leipzig)</h2>
+      <p class="section-intro">Beispielbilder mit unserem Logo – echte Produktfotos ersetzen wir später. Jede Bestellung unterstützt die Kantine.</p>
+      <div class="merch-grid">
+        <div class="merch-item">
+          <img src="merch-geschirrtuch.png" alt="Geschirrtuch mit Kantine-am-Herder-Logo">
+          <strong>Geschirrtuch</strong>
+          <span>12&nbsp;€</span>
+          <a class="btn btn-small" href="mailto:kontakt@fundraiskantine.de?subject=Bestellung%20Geschirrtuch%20(12%20%E2%82%AC)">Bestellen</a>
+        </div>
+        <div class="merch-item">
+          <img src="merch-kochschuerze.png" alt="Kochschürze mit Kantine-am-Herder-Logo">
+          <strong>Kochschürze</strong>
+          <span>25&nbsp;€</span>
+          <a class="btn btn-small" href="mailto:kontakt@fundraiskantine.de?subject=Bestellung%20Kochsch%C3%BCrze%20(25%20%E2%82%AC)">Bestellen</a>
+        </div>
+        <div class="merch-item">
+          <img src="merch-basecap.png" alt="Basecap mit Kantine-am-Herder-Logo">
+          <strong>Basecap</strong>
+          <span>20&nbsp;€</span>
+          <a class="btn btn-small" href="mailto:kontakt@fundraiskantine.de?subject=Bestellung%20Basecap%20(20%20%E2%82%AC)">Bestellen</a>
         </div>
       </div>
     </div>

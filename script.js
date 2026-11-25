@@ -125,6 +125,30 @@ amountButtons.forEach((btn) => {
 
 if (freeInput) freeInput.addEventListener("input", updatePaypalCta);
 
-const defaultAmountBtn = document.querySelector('.amount-btn[data-amount="25"]');
+const defaultAmountBtn = document.querySelector('#amountRow .amount-btn[data-amount="25"]');
 if (defaultAmountBtn) defaultAmountBtn.classList.add("active");
 updatePaypalCta();
+
+const soliRow = document.getElementById("soliAmountRow");
+const soliCta = document.getElementById("soliCta");
+
+if (soliRow && soliCta) {
+  const soliButtons = soliRow.querySelectorAll(".amount-btn");
+  const updateSoli = () => {
+    const active = soliRow.querySelector(".amount-btn.active");
+    const n = active ? Number(active.dataset.amount) : 1;
+    const total = n * 17;
+    soliCta.href = paypalBase + "/" + total;
+    soliCta.textContent = n + "× Soli-Essenmarke – " + total + " € über PayPal";
+  };
+  soliButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      soliButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      updateSoli();
+    });
+  });
+  const soliDefault = soliRow.querySelector('.amount-btn[data-amount="1"]');
+  if (soliDefault) soliDefault.classList.add("active");
+  updateSoli();
+}
