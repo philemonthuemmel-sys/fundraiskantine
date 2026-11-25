@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fundraiskantine – Gemeinsam für unsere Kantine</title>
+<meta name="description" content="Spendenkampagne für den Erhalt und die Modernisierung unserer Kantine. Jede Spende zählt!">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥘</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#start">🥘 Fundraiskantine</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+      <a href="#kampagne">Kampagne</a>
+      <a href="#fortschritt">Fortschritt</a>
+      <a href="#verwendung">Verwendung</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-small" href="#spenden">Jetzt spenden</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="start">
+    <div class="container">
+      <p class="eyebrow">Spendenkampagne 2025</p>
+      <h1>Gemeinsam für unsere Kantine</h1>
+      <p class="lead">Unsere Kantine ist das Herzstück unseres Alltags – warm, günstig und für alle da. Damit das so bleibt, brauchen wir deine Unterstützung.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#spenden">Jetzt spenden</a>
+        <a class="btn btn-ghost" href="#kampagne">Mehr erfahren</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fortschritt"
+           data-goal="25000" data-current="12480" data-donors="214" data-deadline="2025-12-31">
+    <div class="container">
+      <h2>Unser Fortschritt</h2>
+      <div class="progress-card">
+        <div class="progress-numbers">
+          <div>
+            <span class="progress-current" id="progressCurrent">0 €</span>
+            <span class="progress-label">von <span id="progressGoal">0 €</span> gesammelt</span>
+          </div>
+          <span class="progress-percent" id="progressPercent">0 %</span>
+        </div>
+        <div class="progress" id="progressBarWrap" role="progressbar" aria-label="Spendenfortschritt" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="progress-meta">
+          <div><strong id="donorCount">0</strong><span>Spenderinnen &amp; Spender</span></div>
+          <div><strong id="daysLeft">–</strong><span>Tage verbleibend</span></div>
+          <div><strong id="amountLeft">0 €</strong><span>fehlen noch</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="kampagne">
+    <div class="container two-col">
+      <div>
+        <h2>Worum geht es?</h2>
+        <p>Unsere Kantine versorgt täglich hunderte Menschen mit warmen, frischen Mahlzeiten – günstig und mit regionalen Zutaten. Doch die Küchengeräte sind in die Jahre gekommen und der Sitzbereich muss erneuert werden.</p>
+        <p>Mit <strong>25.000&nbsp;€</strong> machen wir die Kantine fit für die kommenden Jahre: neue Geräte, frische Zutaten vom regionalen Anbieter und ein freundlicher Essensbereich.</p>
+      </div>
+      <div class="highlight-box">
+        <h3>Warum jetzt?</h3>
+        <p>Die alten Geräte fallen zunehmend aus und Ersatzteile sind kaum noch erhältlich. Je länger wir warten, desto teurer wird die Sanierung. Jetzt handeln heißt langfristig sparen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="verwendung">
+    <div class="container">
+      <h2>Wofür wird das Geld verwendet?</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-share">40&nbsp;%</div>
+          <h3>Neue Küchengeräte</h3>
+          <p>Industrieherd, Kühlschränke und Spülmaschine – zuverlässig und energieeffizient.</p>
+        </article>
+        <article class="card">
+          <div class="card-share">30&nbsp;%</div>
+          <h3>Frische Zutaten</h3>
+          <p>Regionale Lieferanten und saisonale Produkte für ein abwechslungsreiches Angebot.</p>
+        </article>
+        <article class="card">
+          <div class="card-share">20&nbsp;%</div>
+          <h3>Sitzbereich &amp; Theke</h3>
+          <p>Neue Tische, Stühle und eine moderne Essensausgabe.</p>
+        </article>
+        <article class="card">
+          <div class="card-share">10&nbsp;%</div>
+          <h3>Rücklagen</h3>
+          <p>Für unvorhergesehene Reparaturen und die kommenden Jahre.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="spenden">
+    <div class="container">
+      <h2>So kannst du spenden</h2>
+      <div class="donate-grid">
+        <div class="donate-card">
+          <h3>Per Banküberweisung</h3>
+          <dl class="bank-details">
+            <div><dt>Empfänger</dt><dd>Förderverein Kantine e.&nbsp;V.</dd></div>
+            <div><dt>IBAN</dt><dd><code id="iban">DE00 1234 5678 9000 1234 5678</code> <button class="copy-btn" type="button" data-copy-target="iban">Kopieren</button></dd></div>
+            <div><dt>BIC</dt><dd>MUSTERDEFFXXX</dd></div>
+            <div><dt>Bank</dt><dd>Musterbank</dd></div>
+            <div><dt>Verwendungszweck</dt><dd>Fundraiskantine</dd></div>
+          </dl>
+          <p class="hint">Ab 50&nbsp;€ stellen wir dir gerne eine Spendenquittung aus.</p>
+        </div>
+        <div class="donate-card">
+          <h3>Per PayPal</h3>
+          <p>Schnell und unkompliziert über folgenden Link:</p>
+          <p><a class="btn" href="https://www.paypal.com/paypalme/fundraiskantine" target="_blank" rel="noopener">paypal.me/fundraiskantine</a></p>
+          <p class="hint">Oder scanne den QR-Code an unserem Aushang in der Kantine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <h2>Häufige Fragen</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Wer steht hinter der Kampagne?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Ein ehrenamtliches Team des Fördervereins Kantine e.&nbsp;V. organisiert die Kampagne – mit Unterstützung aus der Elternschaft, dem Kollegium und der Nachbarschaft.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Wie wird das Geld verwendet?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Genau so, wie im Abschnitt „Verwendung" beschrieben. Nach Kampagnenende veröffentlichen wir einen transparenten Verwendungsbericht.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Bekomme ich eine Spendenquittung?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Ja. Ab 50&nbsp;€ stellen wir dir eine Quittung aus – bei PayPal automatisch, bei Banküberweisung auf Anfrage per E-Mail an kontakt@fundraiskantine.de.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Was passiert, wenn das Ziel nicht erreicht wird?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Das gesammelte Geld fließt trotzdem in die geplanten Projekte. Was fehlt, tragen wir über Rücklagen und Folgekampagnen.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Kann ich auch Sachspenden geben?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Sehr gerne! Melde dich dazu einfach per E-Mail an kontakt@fundraiskantine.de – zum Beispiel für Küchengeräte, Geschirr oder Möbel.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="kontakt">
+    <div class="container two-col">
+      <div>
+        <h2>Kontakt</h2>
+        <p>Fragen zur Kampagne oder Interesse an einer Kooperation? Schreib uns einfach:</p>
+        <p><a class="contact-mail" href="mailto:kontakt@fundraiskantine.de">kontakt@fundraiskantine.de</a></p>
+      </div>
+      <form class="contact-form" action="mailto:kontakt@fundraiskantine.de" method="post" enctype="text/plain">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>E-Mail
+          <input type="email" name="email" required>
+        </label>
+        <label>Nachricht
+          <textarea name="nachricht" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Nachricht senden</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="legal" id="impressum">
+    <div class="container narrow">
+      <h2>Impressum</h2>
+      <p>Förderverein Kantine e.&nbsp;V., Musterstraße 1, 12345 Musterstadt · kontakt@fundraiskantine.de</p>
+    </div>
+  </section>
+  <section class="legal" id="datenschutz">
+    <div class="container narrow">
+      <h2>Datenschutz</h2>
+      <p>Diese Seite verarbeitet keine personenbezogenen Daten und setzt keine Cookies. Das Kontaktformular öffnet nur dein E-Mail-Programm.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2025 Fundraiskantine</span>
+    <nav aria-label="Rechtliches">
+      <a href="#impressum">Impressum</a>
+      <a href="#datenschutz">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
