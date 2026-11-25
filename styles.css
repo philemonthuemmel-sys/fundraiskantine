@@ -276,10 +276,11 @@ h2 {
 .about-image {
   display: block;
   width: 100%;
+  max-width: 720px;
   height: auto;
+  margin: 0 auto 2rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  margin-bottom: 2rem;
 }
 
 .two-col {
