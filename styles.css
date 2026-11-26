@@ -306,6 +306,7 @@ h2 {
 
 .two-col > div:first-child {
   margin-top: 1.5cm;
+  margin-left: -1cm;
 }
 
 .highlight-box {
