@@ -276,16 +276,16 @@ h2 {
 #kampagne {
   position: relative;
   background-color: var(--alt);
-  padding-top: calc(4.5rem + 11cm);
+  padding-top: calc(4.5rem + 2cm);
 }
 
 #kampagne::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("leika-haus-cutout.png") no-repeat center top;
-  background-size: min(42%, 440px) auto;
-  opacity: 0.5;
+  background: url("leika-haus-cutout.png") no-repeat center bottom;
+  background-size: min(58%, 680px) auto;
+  opacity: 0.4;
   pointer-events: none;
 }
 
@@ -302,6 +302,10 @@ h2 {
 
 .two-col p + p {
   margin-top: 1rem;
+}
+
+.two-col > div:first-child {
+  margin-top: 1.5cm;
 }
 
 .highlight-box {
@@ -662,13 +666,9 @@ code {
     height: 6.1cm;
   }
 
-  #kampagne {
-    padding-top: calc(4.5rem + 8cm);
-  }
-
   #kampagne::before {
-    background-size: min(80%, 340px) auto;
-    opacity: 0.4;
+    background-size: min(90%, 455px) auto;
+    opacity: 0.3;
   }
 
   .main-nav {
