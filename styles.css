@@ -276,7 +276,7 @@ h2 {
 #kampagne {
   position: relative;
   background-color: var(--alt);
-  padding-top: calc(4.5rem + 2cm);
+  padding-top: calc(4.5rem + 4cm);
 }
 
 #kampagne::before {
@@ -302,10 +302,6 @@ h2 {
 
 .two-col p + p {
   margin-top: 1rem;
-}
-
-.two-col > div:first-child {
-  margin-top: 3.5cm;
 }
 
 .highlight-box {
