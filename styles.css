@@ -273,14 +273,12 @@ h2 {
   font-size: 0.9rem;
 }
 
-.about-image {
-  display: block;
-  width: 100%;
-  max-width: 720px;
-  height: auto;
-  margin: 0 auto 2rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+#kampagne {
+  background-color: var(--alt);
+  background-image: url("leika-haus-cutout.png");
+  background-repeat: no-repeat;
+  background-position: right 2.5rem bottom 1.5rem;
+  background-size: min(42%, 500px) auto;
 }
 
 .two-col {
@@ -637,6 +635,10 @@ code {
 
   .hero-logo {
     height: 6.1cm;
+  }
+
+  #kampagne {
+    background-image: none;
   }
 
   .main-nav {

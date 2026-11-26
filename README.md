@@ -11,6 +11,7 @@ Statische One-Pager-Website für die Spendenkampagne „Fundraiskantine" – rei
 - `favicon.png` – Browser-Icon
 - `merch-*.png` – selbst entworfene Merch-Mockups (Tuch ausgebreitet/kariert, Schürze, Cap) mit Logo-Druck; werden durch echte momochrome-Produktfotos ersetzt
 - `leika-haus.jpg` – Haus-Rendering von leika-leipzig.com (Quelle: `haus-bunt_kompri.jpg`) – Nutzungsrechte bitte mit LEIKA/Libero Architekten klären
+- `leika-haus-cutout.png` – aus `leika-haus.jpg` ausgeschnittener Hausteil, als Hintergrund im Abschnitt „Worum geht es?"
 - `README.md` – diese Datei
 
 ## Kampagnenzahlen anpassen
