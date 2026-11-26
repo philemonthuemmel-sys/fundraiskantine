@@ -309,6 +309,7 @@ h2 {
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
+  margin-left: 3rem;
 }
 
 .highlight-box h3 {
@@ -634,6 +635,10 @@ code {
   .two-col,
   .donate-grid {
     grid-template-columns: 1fr;
+  }
+
+  .highlight-box {
+    margin-left: 0;
   }
 
   .nav-toggle {
