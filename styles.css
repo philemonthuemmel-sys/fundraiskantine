@@ -283,7 +283,7 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("leika-haus-cutout.png") no-repeat calc(50% + 17cm) bottom;
+  background: url("leika-haus-cutout.png") no-repeat calc(50% + 16cm) bottom;
   background-size: min(58%, 680px) auto;
   opacity: 0.4;
   pointer-events: none;
