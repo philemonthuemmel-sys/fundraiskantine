@@ -283,7 +283,7 @@ h2 {
   position: absolute;
   inset: 0;
   background: url("leika-haus-cutout.png") no-repeat center bottom;
-  background-size: min(55%, 600px) auto;
+  background-size: min(58%, 680px) auto;
   opacity: 0.4;
   pointer-events: none;
 }
@@ -649,7 +649,7 @@ code {
   }
 
   #kampagne::before {
-    background-size: min(85%, 380px) auto;
+    background-size: min(90%, 455px) auto;
     opacity: 0.3;
   }
 
