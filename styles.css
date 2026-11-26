@@ -467,6 +467,14 @@ code {
   color: var(--primary-dark);
 }
 
+.example-box {
+  background: var(--alt);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
 .section-intro {
   color: var(--muted);
   max-width: 640px;
