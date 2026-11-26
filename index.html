@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fundraiskantine – Gemeinsam für die Kantine am Herder</title>
+<meta name="description" content="Spendenkampagne für den Start der Kantine am Herder im genossenschaftlichen Neubau LEIKA. Jede Spende zählt!">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#start">Fundraiskantine</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Hauptnavigation">
+      <a href="#kampagne">Kampagne</a>
+      <a href="#fortschritt">Fortschritt</a>
+      <a href="#verwendung">Verwendung</a>
+      <a href="#faq">FAQ</a>
+      <a href="#merch">Merch</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-small" href="#spenden">Jetzt spenden</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="start">
+    <div class="container">
+      <img class="hero-logo" src="logo.png" alt="Kantine am Herder – Logo">
+      <p class="eyebrow">Fundraising Kampagne</p>
+      <p class="lead">Im Sommer 2027 wollen wir im genossenschaftlichen Neubau LEIKA die Kantine am Herder eröffnen – einen Ort, der gemeinsames Essen und soziale Projekte zusammenbringt und mit solidarischen Preisen das Miteinander stärkt. Wir planen einen Mittagstisch von Montag bis Freitag mit wechselndem, überwiegend pflanzlichem und vegetarischem Angebot sowie einen Nachbarschaftstreff im Gastraum. Dafür benötigen wir eure Unterstützung!</p>
+      <div class="hero-actions">
+        <a class="btn" href="#spenden">Jetzt spenden</a>
+        <a class="btn btn-ghost" href="#kampagne">Mehr erfahren</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fortschritt"
+           data-goal="50000" data-current="12480" data-donors="214">
+    <div class="container">
+      <h2>Unser Fortschritt</h2>
+      <div class="progress-card">
+        <div class="progress-numbers">
+          <div>
+            <span class="progress-current" id="progressCurrent">0 €</span>
+            <span class="progress-label">von <span id="progressGoal">0 €</span> gesammelt</span>
+          </div>
+          <span class="progress-percent" id="progressPercent">0 %</span>
+        </div>
+        <div class="progress" id="progressBarWrap" role="progressbar" aria-label="Spendenfortschritt" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="progress-meta">
+          <div><strong id="donorCount">0</strong><span>Unterstützende</span></div>
+          <div><strong id="amountLeft">0 €</strong><span>fehlen noch</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="kampagne">
+    <div class="container">
+      <div class="two-col">
+      <div>
+        <h2>Worum geht es?</h2>
+        <p>Die Kantine am Herder gibt es noch nicht – sie entsteht gerade im genossenschaftlichen Neubau LEIKA und soll im Sommer 2027 eröffnen. Geplant sind ein Mittagstisch von Montag bis Freitag mit wechselndem, überwiegend pflanzlichem und vegetarischem Angebot und ein Nachbarschaftstreff im Gastraum der Kantine.</p>
+        <p>Wir kochen für eine möglichst breite Masse: günstig, frisch und überwiegend pflanzlich und vegetarisch – aber nicht ausschließlich. Dafür kooperieren wir mit solidarischen Landwirtschaften und Vereinen wie Machtlos&nbsp;e.&nbsp;V. Deine Spende finanziert Küchenausstattung und Gastraumeinrichtung.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="verwendung">
+    <div class="container">
+      <h2>Wofür wird das Geld verwendet?</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-share">50&nbsp;%</div>
+          <h3>Küchenausstattung</h3>
+          <p>Küchengeräte, Spüle und Arbeitsflächen – die technische Grundausstattung für den Mittagstisch von Montag bis Freitag.</p>
+        </article>
+        <article class="card">
+          <div class="card-share">30&nbsp;%</div>
+          <h3>Gastraumeinrichtung</h3>
+          <p>Tische, Stühle und Theke – für den Mittagstisch und den Nachbarschaftstreff.</p>
+        </article>
+        <article class="card">
+          <div class="card-share">10&nbsp;%</div>
+          <h3>Erstausstattung</h3>
+          <p>Geschirr, Besteck und erste Zutaten über unsere Kooperationen mit solidarischen Landwirtschaften.</p>
+        </article>
+        <article class="card">
+          <div class="card-share">10&nbsp;%</div>
+          <h3>Organisation</h3>
+          <p>Planung, Genehmigungen, Versicherungen und Kommunikation rund um den Start.</p>
+        </article>
+      </div>
+      <p class="section-note">Auch wenn wir das Ziel von 50.000&nbsp;€ nicht zu 100&nbsp;% erreichen: Jeder gesammelte Euro wird vollständig für Küchenausstattung und Gastraumeinrichtung eingesetzt.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="spenden">
+    <div class="container">
+      <h2>So kannst du unterstützen</h2>
+      <div class="donate-grid">
+        <div class="donate-card">
+          <h3>Spende – Betrag wählen</h3>
+          <div class="amount-row" id="amountRow">
+            <button class="amount-btn" type="button" data-amount="5">5&nbsp;€</button>
+            <button class="amount-btn" type="button" data-amount="10">10&nbsp;€</button>
+            <button class="amount-btn" type="button" data-amount="25">25&nbsp;€</button>
+            <button class="amount-btn" type="button" data-amount="50">50&nbsp;€</button>
+            <button class="amount-btn" type="button" data-amount="100">100&nbsp;€</button>
+            <button class="amount-btn" type="button" data-amount="free">Freie Spende</button>
+          </div>
+          <div class="free-amount" id="freeAmountWrap" hidden>
+            <label>Eigenen Betrag in € eingeben
+              <input type="number" id="freeAmount" min="1" step="1" placeholder="z. B. 75">
+            </label>
+          </div>
+          <p><a class="btn" id="paypalCta" href="https://www.paypal.com/paypalme/fundraiskantine/25" target="_blank" rel="noopener">Jetzt 25&nbsp;€ über PayPal spenden</a></p>
+          <h4>Oder per Banküberweisung</h4>
+          <dl class="bank-details">
+            <div><dt>Empfänger</dt><dd>Förderverein Kantine e.&nbsp;V.</dd></div>
+            <div><dt>IBAN</dt><dd><code id="iban">DE00 1234 5678 9000 1234 5678</code> <button class="copy-btn" type="button" data-copy-target="iban">Kopieren</button></dd></div>
+            <div><dt>BIC</dt><dd>MUSTERDEFFXXX</dd></div>
+            <div><dt>Bank</dt><dd>Musterbank</dd></div>
+            <div><dt>Verwendungszweck</dt><dd>Fundraiskantine</dd></div>
+          </dl>
+          <p class="hint">Ab 50&nbsp;€ stellen wir dir gerne eine Spendenquittung aus.</p>
+        </div>
+        <div class="donate-card">
+          <h3>Soli-Essenmarke – 17&nbsp;€</h3>
+          <p>Eine Marke kostet <strong>17&nbsp;€</strong>. Dafür bekommst du später <strong>ein Essen bei uns</strong> – einlösbar ab der Eröffnung im Sommer 2027. Der Solidaritätsbeitrag fließt direkt in die Einrichtung der Kantine.</p>
+          <div class="amount-row" id="soliAmountRow">
+            <button class="amount-btn" type="button" data-amount="1">1×</button>
+            <button class="amount-btn" type="button" data-amount="2">2×</button>
+            <button class="amount-btn" type="button" data-amount="3">3×</button>
+            <button class="amount-btn" type="button" data-amount="5">5×</button>
+            <button class="amount-btn" type="button" data-amount="10">10×</button>
+          </div>
+          <p><a class="btn" id="soliCta" href="https://www.paypal.com/paypalme/fundraiskantine/17" target="_blank" rel="noopener">1× Soli-Essenmarke – 17&nbsp;€ über PayPal</a></p>
+          <p class="hint">Oder per Banküberweisung (IBAN siehe oben): Verwendungszweck <strong>„Soli-Essenmarke“</strong> plus Anzahl, z.&nbsp;B. „Soli-Essenmarke 5×“.</p>
+        </div>
+        <div class="donate-card">
+          <h3>Direktkredit – so funktioniert's</h3>
+          <p><strong>Was ist ein Direktkredit?</strong> Du leihst uns direkt Geld – z.&nbsp;B. zinslos oder mit niedrigem Zins – statt dass wir einen Bankkredit aufnehmen. Damit finanzieren wir Küchenausstattung und Gastraumeinrichtung, bis Fördermittel oder eigene Einnahmen anlaufen.</p>
+          <p><strong>So läuft es ab:</strong> Du bekommst einen schriftlichen Darlehensvertrag mit Betrag, Zinssatz, Laufzeit und Rückzahlung. Rechtssicher strukturieren wir die Kredite als <em>qualifizierte Nachrangdarlehen</em> – die übliche Form für Vereine und Genossenschaften (dafür braucht es keine Banklizenz und keine Prospektpflicht). Wofür das Geld verwendet wird, steht ebenfalls schriftlich im Vertrag (Zweckbindung: Küchenausstattung und Gastraumeinrichtung der Kantine am Herder).</p>
+          <p><strong>Wichtig für dich:</strong> Bei einem Nachrangdarlehen wird im Insolvenzfall erst nach allen anderen Gläubigern zurückgezahlt – deshalb ist die Verzinsung begrenzt (maximal marktüblich). Zinslos ist möglich. Bekommst du Zinsen, sind die grundsätzlich mit 25&nbsp;% Abgeltungsteuer zu versteuern. Steuerfrei bleiben bis 1.000&nbsp;€ (alleinstehend) bzw. 2.000&nbsp;€ (verheiratet) Zinseinnahmen pro Jahr (Sparer-Pauschbetrag): bei Bankzinsen aktiv per Freistellungsauftrag einrichten, bei privaten Krediten wie diesem in der Steuererklärung angeben (Anlage KAP).</p>
+          <div class="example-box">
+            <strong>Beispiel:</strong> 1.000&nbsp;€ Direktkredit mit 2 Jahren Laufzeit, zinslos → Rückzahlung nach 2 Jahren: <strong>1.000&nbsp;€</strong> (z.&nbsp;B. in einer Summe zum Vertragsende). Mit 1,5&nbsp;% Zins pro Jahr (üblich sind 0–3&nbsp;%) wären es ca. <strong>1.030&nbsp;€</strong>.
+          </div>
+          <p><strong>Interesse?</strong> Schreib uns Betrag, gewünschte Laufzeit und Konditionen an <a href="mailto:kontakt@fundraiskantine.de">kontakt@fundraiskantine.de</a> – wir melden uns mit einem Vertragsentwurf.</p>
+          <p class="hint">Diese Seite ist eine Information, kein öffentliches Angebot. Verbindlich ist allein der schriftliche Darlehensvertrag. Die letzte rechtliche Prüfung erfolgt durch Steuerberater/Rechtsanwalt des Vereins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="merch">
+    <div class="container">
+      <h2>Merch – Siebdruck von momochrome (Leipzig)</h2>
+      <p class="section-intro">Beispielbilder mit unserem Logo – echte Produktfotos ersetzen wir später. Jede Bestellung unterstützt die Kantine.</p>
+      <div class="merch-grid">
+        <div class="merch-item">
+          <img src="merch-geschirrtuch.png" alt="Geschirrtuch mit Kantine-am-Herder-Logo">
+          <strong>Geschirrtuch</strong>
+          <span>12&nbsp;€</span>
+          <a class="btn btn-small" href="mailto:kontakt@fundraiskantine.de?subject=Bestellung%20Geschirrtuch%20(12%20%E2%82%AC)">Bestellen</a>
+        </div>
+        <div class="merch-item">
+          <img src="merch-kochschuerze.png" alt="Kochschürze mit Kantine-am-Herder-Logo">
+          <strong>Kochschürze</strong>
+          <span>25&nbsp;€</span>
+          <a class="btn btn-small" href="mailto:kontakt@fundraiskantine.de?subject=Bestellung%20Kochsch%C3%BCrze%20(25%20%E2%82%AC)">Bestellen</a>
+        </div>
+        <div class="merch-item">
+          <img src="merch-basecap.png" alt="Basecap mit Kantine-am-Herder-Logo">
+          <strong>Basecap</strong>
+          <span>20&nbsp;€</span>
+          <a class="btn btn-small" href="mailto:kontakt@fundraiskantine.de?subject=Bestellung%20Basecap%20(20%20%E2%82%AC)">Bestellen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <h2>Häufige Fragen</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Wer steht hinter der Kampagne?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Ein ehrenamtliches Team des Fördervereins Kantine e.&nbsp;V. organisiert die Kampagne – mit Unterstützung aus der Elternschaft, dem Kollegium und der Nachbarschaft.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Wie wird das Geld verwendet?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Genau so, wie im Abschnitt „Verwendung" beschrieben. Nach Kampagnenende veröffentlichen wir einen transparenten Verwendungsbericht.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Wie funktioniert die Soli-Essenmarke?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Eine Marke kostet 17&nbsp;€. Nach Zahlungseingang (PayPal oder Überweisung mit Verwendungszweck „Soli-Essenmarke“ + Anzahl) bekommst du pro Marke einen persönlichen Code per E-Mail – <strong>1 Code = 1 Essen</strong>. Einlösen kannst du die Marken ab der Eröffnung im Sommer 2027, indem du den Code vor Ort zeigst.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Bekomme ich eine Spendenquittung?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Ja. Ab 50&nbsp;€ stellen wir dir eine Quittung aus – bei PayPal automatisch, bei Banküberweisung auf Anfrage per E-Mail an kontakt@fundraiskantine.de.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Was passiert, wenn das Ziel nicht erreicht wird?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Auch wenn wir die 50.000&nbsp;€ nicht ganz erreichen: Jeder Euro wird direkt für Küchenausstattung und Gastraumeinrichtung verwendet. Fehlendes Geld holen wir über Folgekampagnen und Direktkredite.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-question" type="button" aria-expanded="false">Kann ich auch Sachspenden geben?<span class="accordion-icon" aria-hidden="true">+</span></button>
+          <div class="accordion-answer"><p>Sehr gerne! Melde dich dazu einfach per E-Mail an kontakt@fundraiskantine.de – zum Beispiel für Küchengeräte, Geschirr oder Möbel.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="kontakt">
+    <div class="container two-col">
+      <div>
+        <h2>Kontakt</h2>
+        <p>Fragen zur Kampagne oder Interesse an einer Kooperation? Schreib uns einfach:</p>
+        <p><a class="contact-mail" href="mailto:kontakt@fundraiskantine.de">kontakt@fundraiskantine.de</a></p>
+      </div>
+      <form class="contact-form" action="mailto:kontakt@fundraiskantine.de" method="post" enctype="text/plain">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>E-Mail
+          <input type="email" name="email" required>
+        </label>
+        <label>Nachricht
+          <textarea name="nachricht" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Nachricht senden</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="legal" id="impressum">
+    <div class="container narrow">
+      <h2>Impressum</h2>
+      <p>Förderverein Kantine e.&nbsp;V., Musterstraße 1, 12345 Musterstadt · kontakt@fundraiskantine.de</p>
+    </div>
+  </section>
+  <section class="legal" id="datenschutz">
+    <div class="container narrow">
+      <h2>Datenschutz</h2>
+      <p>Diese Seite verarbeitet keine personenbezogenen Daten und setzt keine Cookies. Das Kontaktformular öffnet nur dein E-Mail-Programm.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2025 Fundraiskantine</span>
+    <nav aria-label="Rechtliches">
+      <a href="#impressum">Impressum</a>
+      <a href="#datenschutz">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

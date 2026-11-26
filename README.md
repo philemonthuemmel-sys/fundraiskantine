@@ -5,8 +5,13 @@ Statische One-Pager-Website für die Spendenkampagne „Fundraiskantine" – rei
 ## Struktur
 
 - `index.html` – die komplette Kampagnenseite (Deutsch)
-- `styles.css` – Gestaltung
+- `styles.css` – Gestaltung (Farben abgestimmt auf das Logo)
 - `script.js` – Fortschrittsbalken, Countdown, FAQ-Akkordeon, Kopier-Buttons, mobile Navigation
+- `logo.png` – Kampagnen-Logo (transparent, im Header eingebunden)
+- `favicon.png` – Browser-Icon
+- `merch-*.png` – selbst entworfene Merch-Mockups (Tuch ausgebreitet/kariert, Schürze, Cap) mit Logo-Druck; werden durch echte momochrome-Produktfotos ersetzt
+- `leika-haus.jpg` – Haus-Rendering von leika-leipzig.com (Quelle: `haus-bunt_kompri.jpg`) – Nutzungsrechte bitte mit LEIKA/Libero Architekten klären
+- `leika-haus-cutout.png` – aus `leika-haus.jpg` ausgeschnittener Hausteil, als Hintergrund im Abschnitt „Worum geht es?"
 - `README.md` – diese Datei
 
 ## Kampagnenzahlen anpassen
@@ -15,8 +20,7 @@ Die Zahlen stehen als `data`-Attribute am Abschnitt `#fortschritt` in `index.htm
 
 - `data-goal` – Spendenziel in Euro
 - `data-current` – bisher gesammelter Betrag in Euro
-- `data-donors` – Anzahl der Spenderinnen und Spender
-- `data-deadline` – Frist im Format `JJJJ-MM-TT`
+- `data-donors` – Anzahl der Unterstützenden
 
 Bankverbindung und Kontaktdaten stehen direkt in den Abschnitten `#spenden` und `#kontakt`.
 
