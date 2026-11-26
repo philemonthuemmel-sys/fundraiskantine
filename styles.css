@@ -276,7 +276,8 @@ h2 {
 #kampagne {
   position: relative;
   background-color: var(--alt);
-  padding-top: calc(4.5rem + 4cm);
+  padding-top: calc(4.5rem + 2cm);
+  padding-bottom: calc(13cm + 2rem);
 }
 
 #kampagne::before {
@@ -284,8 +285,8 @@ h2 {
   position: absolute;
   inset: 0;
   background: url("leika-haus-cutout.png") no-repeat center bottom;
-  background-size: min(58%, 680px) auto;
-  opacity: 0.4;
+  background-size: min(45%, 470px) auto;
+  opacity: 0.45;
   pointer-events: none;
 }
 
@@ -662,8 +663,12 @@ code {
     height: 6.1cm;
   }
 
+  #kampagne {
+    padding-bottom: calc(11cm + 1rem);
+  }
+
   #kampagne::before {
-    background-size: min(90%, 455px) auto;
+    background-size: min(90%, 380px) auto;
     opacity: 0.3;
   }
 
